@@ -5,6 +5,9 @@
     <title>Practice</title>
 </head>
 <body>
-{ Words.word_text }
+  {% for word in all_words_list %}
+           <h1>{{ word.language_word }}</h1>
+           <p>{{ word.meaning_text }}</p>
+        {% endfor %}
 </body>
 </html>
